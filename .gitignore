@@ -1,3 +1,4 @@
+__pycache__
 data/fMRI_timeseries_clean_denoised_GSR_parcellated/
 data/motion_FD/
 data/phenotype/
