@@ -12,6 +12,11 @@ then we are going to move some files to make the code run easier
 mv ./data/phenotype/demos.tsv ./data/
 mv ./data/phenotype/notes.tsv ./data/
 ```
+```
+aws s3 sync --no-sign-request s3://openneuro.org/ds005237 ./data/events \
+  --exclude "*" \
+  --include "sub-*/func/*events.tsv"
+```
 ## Install ssm
 Activate the environment you want to use, then:
 ```bash
